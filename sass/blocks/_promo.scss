@@ -1,0 +1,87 @@
+.promo {
+    min-height: 704px;
+    width: 100%;
+    .promo_items {
+        min-height: 704px;
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        .promo_text {
+            width: 510px;
+            min-height: 544px;
+            margin-right: 30px;
+            .promo_title {
+                color: #fff;
+                font-size: 68px;
+                font-weight: 600;
+                line-height: 74px;
+                text-transform: capitalize;
+            }
+            .promo_descr {
+                font-size: 22px;
+                color: #fff;
+                margin-top: 20px;
+            }
+            .promo_small_card {
+                display: none;
+            }
+            .promo_btn {
+                @include btn-style;
+                height: 60px;
+                width: 224px;
+                margin-top: 30px;
+            }
+            .promo_static {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 30px;
+                li {
+                    width: 150px;
+                    .static_number {
+                        color: #fff;
+                        font-family: 'Space Mono', monospace;
+                        font-size: 28px;
+                        font-weight: 700;
+                    }
+                    .static_title {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .promo_card {
+            height: 510px;
+            width: 510px;
+            border-radius: 20px;
+            transition: 0.2s all;
+            .card_text {
+                height: 109px;
+                width: 100%;
+                background-color: #3B3B3B;
+                border-radius: 0 0 20px 20px;
+                padding-top: 20px;
+                padding-left: 20px;
+                .card_title {
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+                .card_user {
+                    display: flex;
+                    margin-top: 10px;
+                    .user_name {
+                        color: #fff;
+                        margin-left: 12px;
+                    }
+                }
+            }
+            @include up-animation;
+        }
+    }
+}

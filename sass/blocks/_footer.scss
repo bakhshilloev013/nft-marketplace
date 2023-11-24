@@ -1,0 +1,99 @@
+.footer {
+    min-height: 334px;
+    width: 100%;
+    background-color: #3b3b3b;
+    .footer_items {
+        min-height: 334px;
+        width: 100%;
+        padding-top: 40px;
+        .footer_top {
+            height: 221px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #858584;
+            .footer_item {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                &:first-child {
+                    width: 243px;
+                    li {
+                        &:nth-child(2) {
+                            margin-top: 30px;
+                            color: #CCCCCC;
+                        }
+                    }
+                    .footer_social {
+                        margin-top: 20px;
+                        .social_title {
+                            color: #CCCCCC;
+                        }
+                        .social_icons {
+                            display: flex;
+                            width: 158px;
+                            justify-content: space-between;
+                            font-size: 28px;
+                            margin-top: 10px;
+                            a {
+                                color: #858584;
+                                transition: 0.3s all;
+                                &:hover {
+                                    transition: 0.3s all;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    width: 240px;
+                    li {
+                        &:nth-child(2) {
+                            margin-top: 25px;
+                        }
+                        margin-bottom: 20px;
+                        a {
+                            color: #CCCCCC;
+                            text-decoration: none;
+                            transition: 0.3s all;
+                            &:hover {
+                                transition: 0.3s all;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &:last-child {
+                    width: 420px;
+                    li {
+                        &:nth-child(2) {
+                            color: #CCCCCC;
+                            margin-top: 25px;
+                            width: 330px;
+                        }
+                        form {
+                            @include form-style;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                li {
+                    &:first-child {
+                        color: #fff;
+                        font-size: 22px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .footer_bottom {
+            height: 13px;
+            width: 100%;
+            color: #CCCCCC;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+}

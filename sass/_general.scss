@@ -1,0 +1,16 @@
+body {
+    background: #2B2B2B;
+}
+.container {
+    max-width: 1050px;
+}
+@import "blocks/header";
+@import "blocks/promo";
+@import "blocks/collection";
+@import "blocks/creators";
+@import "blocks/categories";
+@import "blocks/discover";
+@import "blocks/mashrooms";
+@import "blocks/works";
+@import "blocks/join";
+@import "blocks/footer";

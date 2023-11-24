@@ -1,0 +1,86 @@
+.mashrooms {
+    min-height: 640px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%), url("../../img/mushroom_bg.png") center center/cover no-repeat;
+    .mashrooms_items {
+        min-height: 640px;
+        width: 100%;
+        padding-top: 360px;
+        .mashrooms_content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .content_left {
+                height: 100%;
+                .mashrooms_user {
+                    width: 151px;
+                    height: 44px;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    background-color: #2b2b2b;
+                    .user_name {
+                        margin-left: 12px;
+                        color: #fff;
+                    }
+                }
+                .mashrooms_title {
+                    @include title-style;
+                    margin-top: 30px;
+                }
+                .mashrooms_btn {
+                    @include btn-style;
+                    background-color: #fff;
+                    width: 198px;
+                    height: 60px;
+                    color: #000;
+                    margin-top: 30px;
+                    i {
+                        color: $main-color;
+                    }
+                }
+                .content_time_small {
+                    display: none;
+                }
+            }
+            .content_time {
+                width: 295px;
+                height: 144px;
+                border-radius: 20px;
+                background-color: rgba(59, 59, 59, 0.50);
+                padding: 30px;
+                .time_title {
+                    color: #fff;
+                    font-size: 12px;
+                }
+                .time_numbers {
+                    font-family: "Space Mono", monospace;
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 28px;
+                    font-weight: 700;
+                    line-height: 39px;
+                    margin-top: 10px;
+                    .time_hours, .time_minutes, .time_seconds {
+                        font-size: 38px;
+                        font-weight: 700;
+                    }
+                }
+                .time_info {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    color: #fff;
+                    * {
+                        width: 53px;
+                        // margin-right: 38px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.creators {
+    min-height: 1085px;
+    width: 100%;
+    .creators_items {
+        min-height: 1085px;
+        width: 100%;
+        padding-top: 80px;
+        .creators_header {
+            height: 91px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .creators_titles {
+                height: 100%;
+                .creators_title {
+                    @include title-style;
+                }
+                .creators_subtitle {
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 400;
+                    margin: 0;
+                    margin-top: 10px;
+                }
+            }
+            .creators_btn {
+                height: 60px;
+                width: 247px;
+                border-radius: 20px;
+                border: 2px solid $main-color;
+                color: #fff;
+                background-color: rgba(255,255,255, 0);
+                font-weight: 600;
+                i {
+                    color: $main-color;
+                }
+            }
+        }
+        .creators_content {
+            min-height: 774px;
+            width: 100%;
+            margin-top: 60px;
+            .content_stage {
+                min-height: 238px;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                .creators_item {
+                    height: 238px;
+                    width: 240px;
+                    border-radius: 20px;
+                    background-color: #3B3B3B;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    padding: 20px;
+                    @include up-animation;
+                    .item_num {
+                        position: absolute;
+                        left: 20px;
+                        top: 18px;
+                        height: 30px;
+                        width: 30px;
+                        border-radius: 100%;
+                        font-family: "Space Mono", monospace;
+                        background-color: #2b2b2b;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #858584;
+                    }
+                    .item_text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .item_title {
+                            color: #fff;
+                            font-size: 22px;
+                            font-weight: 600;
+                            margin-top: 20px;
+                        }
+                        .item_info {
+                            display: flex;
+                            justify-content: space-between;
+                            .item_sales {
+                                color: #858584;
+                                width: 102px;
+                            }
+                            .item_price {
+                                font-family: "Space Mono", monospace;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

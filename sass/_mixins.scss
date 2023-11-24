@@ -1,0 +1,50 @@
+@mixin btn-style {
+    border-radius: 20px;
+    background-color: $main-color;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+@mixin up-animation {
+    &:hover {
+        cursor: pointer;
+        transition: 0.2s all;
+        transform: translate(3px, -3px);
+        box-shadow: -3px 3px 15px 3px #000;
+    }
+}
+
+@mixin title-style {
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 45px;
+    margin: 0;
+}
+
+@mixin form-style {
+    height: 60px;
+    width: 425px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    input {
+        width: 100%;
+        border-radius: 20px;
+        height: 60px;
+        border: none;
+        padding-left: 20px;
+        outline: none;
+    }
+    button {
+        position: absolute;
+        @include btn-style;
+        right: 0;
+        height: 60px;
+        width: 211px;
+        border-radius: 20px;
+    }
+}
